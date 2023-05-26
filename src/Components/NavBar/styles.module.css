@@ -1,0 +1,64 @@
+.navBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--pure-white);
+    height: 72px;
+}
+
+.logo{
+    width: 170px;
+    object-fit: contain;
+}
+
+.content{
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinks{
+    list-style-type: none;
+    display: flex;
+    gap: 37px;
+}
+
+.navLink{
+    text-transform: uppercase;
+    color: var(--true-black);
+    font-family: var(--font);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15.62px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.navLink:hover{
+    color: rgba(0, 0, 0, 0.3)
+}
+
+.inviteButton{
+    background-color: var(--pure-black);
+    width: 158px;
+    height: 40px;
+    color: var(--pure-white);
+    text-transform: uppercase;
+    font-family: var(--font);
+    font-size: 12px;
+    line-height: 15.62px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.inviteButton:hover{
+    background-color:  var(--light-grey);
+    color: var(--pure-black);
+}
+
+@media(max-width: 1150px){
+    .content{
+        width: 90%;
+    }
+}

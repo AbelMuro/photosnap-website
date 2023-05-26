@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'DM sans';
+    src: url('./Assets/Font/DMSans-Bold.ttf'), url('./Assets/Font/DMSans-Regular.ttf');
+}
+
+:root{
+    --font: 'DM sans';
+    --pure-black: #000000;
+    --light-grey: #DFDFDF;
+    --pure-white: #FFFFFF;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    transition: all 0.2s linear;
+}
+
+body{
+    height: 100vh;
+}
