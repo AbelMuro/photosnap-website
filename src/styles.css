@@ -1,6 +1,13 @@
 @font-face {
     font-family: 'DM sans';
-    src: url('./Assets/Font/DMSans-Bold.ttf'), url('./Assets/Font/DMSans-Regular.ttf');
+    src: url('./Assets/Font/DMSans-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'DM sans' ;
+    src: url('./Assets/Font/DMSans-Regular.ttf');
+    font-weight: 400;
 }
 
 :root{

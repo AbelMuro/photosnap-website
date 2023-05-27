@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './styles.module.css';
-import logo from './icons';
+import icons from '../../Assets/icons';
 
 function NavBar() {
     return(
         <nav className={styles.navBar}>
             <div className={styles.content}>
-                <img src={logo} className={styles.logo}/>
+                <img src={icons['logoNav']} className={styles.logo}/>
                 <ul className={styles.navLinks}>
                     <li className={styles.navLink}>
                         stories

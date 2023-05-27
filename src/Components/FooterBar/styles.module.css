@@ -6,9 +6,203 @@
     align-items: center;
 }
 
-.content{
+.footer_content{
     width: 1104px;
     height: 122px;
     display: flex;
     justify-content: space-between;
+}
+
+.content_grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    row-gap: 85px;
+    column-gap: 110px;
+}
+
+.content_grid_socialIcons{
+    display: flex;
+    gap: 13.33px;
+}
+
+.content_grid_socialIcon{
+    width: 20px;
+    height: 20px;
+    mask-size: 20px 20px;
+    -webkit-mask-size: 20px 20px;
+    mask-repeat: no-repeat;
+    -webkit-mask-repeat: no-repeat;
+    background-color: white;
+    cursor: pointer;
+}
+
+.content_grid_socialIcon:nth-child(1){
+    mask-image: url('./icons/facebook.svg');
+    -webkit-mask-image: url('./icons/facebook.svg');
+}
+
+.content_grid_socialIcon:nth-child(1):hover{
+    background: linear-gradient(225deg, #63AFDB 0%, #6028F1 100%);
+}
+
+.content_grid_socialIcon:nth-child(2){
+    mask-image: url('./icons/youtube.svg');
+    -webkit-mask-image: url('./icons/youtube.svg');
+}
+
+.content_grid_socialIcon:nth-child(2):hover{
+    background: linear-gradient(45deg, #D3205A 0%, #FF5A5A 100%);
+}
+
+.content_grid_socialIcon:nth-child(3){
+    mask-image: url('./icons/twitter.svg');
+    -webkit-mask-image: url('./icons/twitter.svg');
+}
+
+.content_grid_socialIcon:nth-child(3):hover{
+    background: linear-gradient(225deg, #65FFEB 0%, #27718A 100%)
+}
+
+.content_grid_socialIcon:nth-child(4){
+    mask-image: url('./icons/pinterest.svg');
+    -webkit-mask-image: url('./icons/pinterest.svg');
+}
+
+.content_grid_socialIcon:nth-child(4):hover{
+    background: linear-gradient(225deg, #F6C683 0%, #DE3838 100%);
+}
+
+.content_grid_socialIcon:nth-child(5){
+    mask-image: url('./icons/instagram.svg');
+    -webkit-mask-image: url('./icons/instagram.svg');
+}
+
+.content_grid_socialIcon:nth-child(5):hover{
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%)
+}
+
+.content_grid_navLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    grid-row: 1/4;
+    grid-column: 2/3;
+}
+
+.content_grid_navLink{
+    text-transform: uppercase;
+    list-style-type: none;
+    font-family: var(--font);
+    font-size: 12px;
+    line-height: 15.62px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+.content_grid_navLink:hover {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.content_other{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.inviteLink{
+    text-transform: uppercase;
+    font-family: var(--font);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15.62px;
+    letter-spacing: 2px;
+    color: white;
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.inviteLink:hover span {
+    text-decoration: underline;
+}
+
+.copyright{
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19.53px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.arrow{
+    width: 42px;
+    object-fit: contain;
+}
+
+@media(max-width: 1150px){
+    .footer_content{
+        width: 90%;
+    }
+}
+
+@media(max-width: 768px){
+    .footer{
+        height: 284px;
+    }
+
+    .footer_content{
+        height: 156px  
+    }
+
+    .content_grid{
+        grid-template-columns: auto;
+        row-gap: 32px;
+    }
+
+    .content_grid_navLinks{
+        flex-direction: row;
+        grid-column: 1/2;
+        grid-row: initial;
+    }
+
+    .content_grid_socialIcons{
+        padding-top: 8px;
+        grid-row: 4/5;
+    }
+}
+
+@media(max-width: 620px){
+    .footer{
+        height: 539px;
+    }
+
+    .footer_content{
+        flex-direction: column;
+        gap: 119px;
+        height: 427px;
+    }
+    .content_grid{
+        justify-content: center;
+    }
+
+    .content_grid_navLinks{
+        flex-direction: column;
+        grid-row: 3/4;
+        align-items: center;
+        padding-top: 17px
+    }
+
+    .content_grid_socialIcons{
+        grid-row: 2/3;
+        padding: 0px;
+    }
+
+    .content_other{
+        align-items: center;
+    }
 }
