@@ -17,7 +17,15 @@
     --pure-white: #FFFFFF;
 }
 
+:root{
+    --closest: 75;
+    --close: 50;
+    --far: 25;
+    --farthest: 0;
+}   
+
 * {
+    box-sizing: border-box;
     margin: 0px;
     padding: 0px;
     border: none;

@@ -39,8 +39,8 @@ function TextAndImage ({title, desc, imageDesktop, imageTablet, imageMobile, tex
     }
 
     return(
-        <section className={styles.flex} ref={handleFlexDirection}>
-            <div className={styles.textBox} ref={handleTextBox}>
+        <article className={styles.flex} ref={handleFlexDirection}>
+            <section className={styles.textBox} ref={handleTextBox}>
                 {displayBar ? <div className={styles.line}></div> : <></>} 
                 <div className={styles.content}>
                     <h1 className={styles.textBox_title} ref={handleTextColor}>
@@ -54,9 +54,9 @@ function TextAndImage ({title, desc, imageDesktop, imageTablet, imageMobile, tex
                         <img src={arrow} className={styles.arrow}/>
                     </a>
                 </div>
-            </div>
+            </section>
             <img className={styles.image} ref={handleImage}/>
-        </section>
+        </article>
     )
 }
 

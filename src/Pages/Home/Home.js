@@ -4,6 +4,7 @@ import styles from './styles.module.css';
 import images from './images'
 import icons from '../../Assets/icons';
 import FeaturedStories from '../../Components/FeaturedStories'
+import Features from '../../Components/Features';
 
 
 function Home() {
@@ -46,6 +47,7 @@ function Home() {
                     imageMobile={images['designedForEveryoneMobile']}
                     />
                     <FeaturedStories/>
+                    <Features/>
             </main>
         )
 }
