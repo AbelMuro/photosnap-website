@@ -38,7 +38,7 @@
     white-space: nowrap;
 }
 
-.storyAuthor{
+.storyAuthor, .datePosted{
     font-family: var(--font);
     font-size: 13px;
     line-height: 16.93px;

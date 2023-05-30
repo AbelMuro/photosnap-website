@@ -1,0 +1,108 @@
+.container{
+    display: flex;
+    height: 490px
+}
+
+.image{
+    content: url('./images/hero.jpg');
+    width: 60%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blackBox{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    position: relative;
+}
+
+.line{
+    width: 6px;
+    height: 144px;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0px;
+    margin: auto;
+    transition: none;
+}
+
+.blackBox_content{
+    width: 387px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.blackBox_title{
+    font-family: var(--font);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 4.17px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.blackBox_desc{
+    font-family: var(--font);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.6);
+    
+}
+
+@media(max-width: 1230px){
+    .blackBox{
+        width: 486px;
+        flex-shrink: 0;
+    }
+}
+
+@media(max-width: 800px){
+    .blackBox{
+        width: 70%;
+        flex-shrink: initial;
+    }
+    .image{
+        width: 273px;
+        flex-shrink: 0;
+        content: url('./images/hero-tablet.jpg');
+    }
+
+    .blackBox_content{
+        width: 80%
+    }
+}
+
+@media(max-width: 600px){
+    .container{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+    .blackBox{
+        height: 300px;
+        width: 100%;
+    }
+    .blackBox_title{
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: 3.33px;
+    }
+    .line{
+        bottom: initial;
+        left: 29px;
+        height: 6px;
+        width: 128px;
+    }
+    .image{
+        width: 100%;
+        content: url('./images/hero-mobile.jpg');
+    }
+}

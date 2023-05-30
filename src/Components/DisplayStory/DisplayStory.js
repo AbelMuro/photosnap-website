@@ -3,8 +3,8 @@ import styles from './styles.module.css';
 import icons from '../../Assets/icons'
 import useMediaQuery from '../../Hooks/useMediaQuery';
 
-function DisplayStory({story}) {
-    const {title, author, image, imageMobile} = story;
+function DisplayStory({story, displayDate}) {
+    const {title, author, image, imageMobile, datePosted} = story;
     const mobile = useMediaQuery('(max-width: 550px)')
 
 
@@ -23,6 +23,10 @@ function DisplayStory({story}) {
             <img className={styles.storyImage} ref={handleImage}/>
             
             <div className={styles.storyData}>
+                {displayDate ? 
+                    <h2 className={styles.datePosted}>
+                        {datePosted}
+                    </h2> : <></>}
                 <h1 className={styles.storyTitle}>
                     {title}
                 </h1>

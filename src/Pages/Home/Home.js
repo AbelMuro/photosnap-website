@@ -4,7 +4,7 @@ import styles from './styles.module.css';
 import images from './images'
 import icons from '../../Assets/icons';
 import FeaturedStories from '../../Components/FeaturedStories'
-import Features from '../../Components/Features';
+import Features from './Features';
 
 
 function Home() {

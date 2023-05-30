@@ -10,11 +10,11 @@ function TextAndImage ({title, desc, imageDesktop, imageTablet, imageMobile, tex
         if(!ref) return;
 
         if(mobile)
-            ref.src = imageMobile;
+            ref.style.content = `url(${imageMobile})`;
         else if(tablet)
-            ref.src = imageTablet;
+            ref.style.content = `url(${imageTablet})`;
         else
-            ref.src = imageDesktop;
+            ref.style.content = `url(${imageDesktop})`;
     }
 
     const handleTextBox = (ref) => {

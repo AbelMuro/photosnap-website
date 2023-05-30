@@ -68,4 +68,94 @@
     text-transform: uppercase;
     display: flex;
     gap: 16px;
+    cursor: pointer;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.mobileContainer{
+    display: flex;
+    flex-direction: column;
+    transition: none;
+}
+
+.mobile_image{
+    content: url('./images/moon-of-appalacia-mobile.jpg');
+    width: 100%;
+    object-fit: contain;
+}
+
+.mobile_blackBox{
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 48px 28px
+}
+
+.mobile_secondTitle{
+    font-family: var(--font);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 15.62px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.mobile_title{
+    font-family: var(--font);
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 3.33px;
+    font-weight: 700;
+    color: white;
+}
+
+.mobile_author{
+    font-family: var(--font);
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16.93px;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 8px;
+}
+
+.mobile_author span{
+    color: white;
+}
+
+.mobile_desc{
+    font-family: var(--font);
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 8px;
+}
+
+.mobile_link{
+    font-family: var(--font);
+    font-size: 12px;
+    line-height: 15.62px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    gap: 16px;
+    cursor: pointer;
+}
+
+.mobile_link:hover{
+    text-decoration: underline;
+}
+
+@media(max-width: 768px){
+    .container{
+        padding-left: 39px;
+        background-image: url('./images/moon-of-appalacia-tablet.jpg')
+    }
 }
