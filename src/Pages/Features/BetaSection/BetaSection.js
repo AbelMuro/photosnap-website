@@ -14,7 +14,6 @@ function BetaSection () {
                     <img className={styles.arrow} src={icons['arrow']}/>
                 </a>                
             </div>
-
         </section>
     )
 }
