@@ -1,0 +1,44 @@
+.container{
+    grid-column: 1/4;
+    margin: auto;
+    width: 255px;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.pricing{
+    font-family: var(--font);
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+.switch{
+    position: relative;
+    width: 64px;
+    height: 32px;
+    padding: 4px 0px;
+    border-radius: 16px;
+    background-color: #DFDFDF;
+    cursor: pointer;
+}
+
+.switch:hover{
+    background-color: black;
+}
+
+.handle{
+    position: absolute;
+    left: 4px;
+    width:24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: black;
+}
+
+.switch:hover .handle{
+    background-color: white;
+}
+
