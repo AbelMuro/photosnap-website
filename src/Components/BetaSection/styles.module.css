@@ -1,0 +1,102 @@
+.container{
+    background-image: url('./images/bg-beta.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.content{
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    width: 400px;
+    color: white;
+    font-family: var(--font);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 4.17px;
+    text-transform: uppercase;
+}
+
+.link{
+    display: flex;
+    gap: 16px;
+    font-family: var(--font);
+    font-size: 15.62px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    color: white;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.arrow{
+    width: 42px;
+    object-fit: contain;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.line{
+    height: 100%;
+    width: 6px;
+    background: linear-gradient(26.57deg, #FFC593 0%, #BC7198 43.29%, #5A77FF 83.33%);
+    position: absolute;
+    left: 0px;
+    transition: none;
+}
+
+
+@media(max-width: 1200px){
+    .content{
+        width: 90%;
+    }
+}
+
+@media(max-width: 700px){
+    .container{
+        height: 288px;
+        background-image: url('./images/bg-beta-tablet.jpg');
+    }
+
+    .content{
+        width: 60%;
+        flex-direction: column;
+        gap: 24px;
+        align-items: flex-start;
+    }
+    .title{
+        width: 100%;
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .line{
+        width: 128px;
+        height: 6px;
+        left: 33px;
+        top: 0px;
+    }
+}
+
+@media(max-width: 500px) {
+    .container{
+        background-image: url('./images/bg-beta-mobile.jpg');
+    }
+
+    .content{
+        width: 80%;
+    }
+}

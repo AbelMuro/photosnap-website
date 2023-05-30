@@ -1,10 +1,11 @@
 import React from 'react';
 import styles from './styles.module.css';
-import icons from '../../../Assets/icons';
+import icons from '../../Assets/icons';
 
 function BetaSection () {
     return(
         <section className={styles.container}>
+            <div className={styles.line}></div>
             <div className={styles.content}>
                 <h1 className={styles.title}>
                     We’re in beta. Get your invite today!

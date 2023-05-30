@@ -4,7 +4,6 @@
 }
 
 .image{
-    content: url('./images/hero.jpg');
     width: 60%;
     object-fit: cover;
     object-position: center;
@@ -73,7 +72,6 @@
     .image{
         width: 273px;
         flex-shrink: 0;
-        content: url('./images/hero-tablet.jpg');
     }
 
     .blackBox_content{
@@ -103,6 +101,5 @@
     }
     .image{
         width: 100%;
-        content: url('./images/hero-mobile.jpg');
     }
 }
