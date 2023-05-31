@@ -42,3 +42,9 @@
     background-color: white;
 }
 
+@media(max-width: 800px) {
+    .container{
+        grid-column: 1/2;
+        margin-bottom: 16px;
+    }
+}

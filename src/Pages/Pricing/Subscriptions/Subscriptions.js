@@ -13,11 +13,13 @@ function Subscriptions() {
             {Plans.map((plan) => {
                 return(
                     <Plan 
+                        key={plan.name}
                         title={plan.name}
                         desc={plan.desc}
                         price={pricing === 'Monthly' ? plan.monthlyPrice : plan.yearlyPrice}
                         monthlyOrYearly={pricing === 'Monthly' ?  'per month' : 'per year' }
-                        />                    
+                        emphasize={plan.emphasize}
+                    />                    
                 )
             })}
 

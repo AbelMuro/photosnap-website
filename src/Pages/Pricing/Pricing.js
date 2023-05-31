@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../../Components/Header';
 import Subscriptions from './Subscriptions';
+import Table from './Table';
 import BetaSection from '../../Components/BetaSection';
 import images from './images';
 
@@ -15,6 +16,7 @@ function Pricing () {
                 imageMobile={images['heroMobile']}
             />
             <Subscriptions/>
+            <Table/>
             <BetaSection/>
         </main>
     )
