@@ -11,34 +11,39 @@ function Table() {
         <table className={styles.tableMobile}>
             <caption className={styles.tableMobileTitle}>the features</caption>
             <tbody>
-
-                <h1 className={styles.tableMobileFeature}>
-                    unlimited story posting
-                </h1>
-                    
-                <tr>
-                    <td className={styles.tableMobilePlan}>
-                        Basic
-                    </td>
-                    <td className={styles.tableMobilePlan}>
-                        pro
-                    </td>
-                    <td className={styles.tableMobilePlan}>
-                        business
-                    </td>
-                </tr>
-                <tr className={styles.tableMobileCheckRow}>
-                    <td className={styles.tableMobileCheck}>
-                        <img src={check} className={styles.checkMark}/>
-                    </td>
-                    <td className={styles.tableMobileCheck}>
-                        <img src={check} className={styles.checkMark}/>
-                    </td>
-                    <td className={styles.tableMobileCheck}>
-                        <img src={check} className={styles.checkMark}/>
-                    </td>
-                </tr>
-
+                {
+                    PlanFeatures.map((feature) => {
+                        return(
+                            <>
+                                <h1 className={styles.tableMobileFeature}>
+                                    {feature.name}
+                                </h1>
+                                <tr>
+                                    <td className={styles.tableMobilePlan}>
+                                        basic
+                                    </td>
+                                    <td className={styles.tableMobilePlan}>
+                                        pro
+                                    </td>
+                                    <td className={styles.tableMobilePlan}>
+                                        business
+                                    </td>
+                                </tr>
+                                <tr className={styles.tableMobileCheckRow}>
+                                    <td className={styles.tableMobileCheck}>
+                                        {feature.basic ? <img src={check} className={styles.checkMarkMobile}/> : <></>}
+                                    </td>
+                                    <td className={styles.tableMobileCheck}>
+                                        {feature.pro ? <img src={check} className={styles.checkMarkMobile}/> : <></>}
+                                    </td>
+                                    <td className={styles.tableMobileCheck}>
+                                        {feature.business ? <img src={check} className={styles.checkMarkMobile}/> : <></>}
+                                    </td>
+                                </tr>                               
+                            </>
+                        )
+                    })
+                }
             </tbody>
         </table>
         ) 
@@ -63,18 +68,18 @@ function Table() {
                     </tr>
                     {
                         PlanFeatures.map((feature) => {
-                            return(
+                            return (
                                 <tr className={styles.rowData} key={feature.name}>
                                     <td className={styles.feature}>
                                         {feature.name}
                                     </td>
-                                    <td className={styles.check}>
+                                    <td>
                                         {feature.basic ? <img src={check} className={styles.checkMark}/> : <></>}
                                     </td>
-                                    <td className={styles.check}>
+                                    <td>
                                         {feature.pro ? <img src={check} className={styles.checkMark}/> : <></>}
                                     </td>
-                                    <td className={styles.check}>
+                                    <td>
                                         {feature.business ? <img src={check} className={styles.checkMark}/> : <></>}
                                     </td>
                                 </tr>

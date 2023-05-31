@@ -126,7 +126,7 @@
     width: 100px;
     text-align: left;
 }
-.checkMark{
+.checkMarkMobile{
     width: 16px;
     object-fit: contain;
     display: inline;

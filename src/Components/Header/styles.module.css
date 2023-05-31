@@ -1,6 +1,7 @@
 .container{
     display: flex;
-    height: 490px
+    height: 490px;
+    overflow: hidden;
 }
 
 .image{
@@ -54,12 +55,11 @@
     font-weight: 400;
     line-height: 25px;
     color: rgba(255, 255, 255, 0.6);
-    
 }
 
-@media(max-width: 1230px){
+@media(max-width: 1100px){
     .blackBox{
-        width: 486px;
+        width: 440px;
         flex-shrink: 0;
     }
 }
@@ -70,10 +70,9 @@
         flex-shrink: initial;
     }
     .image{
-        width: 273px;
+        width: 300px;
         flex-shrink: 0;
     }
-
     .blackBox_content{
         width: 80%
     }
