@@ -68,3 +68,85 @@
     display: block;
     margin: auto;
 }
+
+/* mobile selectors*/
+
+.tableMobile{
+    width: 90%;
+    border-collapse: collapse;
+    margin: 64px auto 64px auto
+}
+
+.tableMobileTitle{
+    font-family: var(--font);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15.62px;
+    letter-spacing: 2px;
+    color: black;
+    text-transform: uppercase;
+    text-align: left;
+    padding-bottom: 23px;
+    border-bottom: 1px solid black
+}
+
+.tableMobileFeature{
+    width: 60px;
+    font-family: var(--font);
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 15.62px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 23px 0px 16px 0px;
+    white-space: nowrap;
+}
+
+
+
+.tableMobilePlan{
+    width: 100px;
+    font-family: var(--font);
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 13.02px;
+    letter-spacing: 1.67px;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.5);
+    padding: 0px 0px 8px 0px
+}
+
+
+
+.tableMobileCheckRow{
+    border-bottom: 1px solid #DFDFDF;
+}
+.tableMobileCheck{
+    padding-bottom: 24px;
+    width: 100px;
+    text-align: left;
+}
+.checkMark{
+    width: 16px;
+    object-fit: contain;
+    display: inline;
+}
+
+
+@media(max-width: 800px){
+    .table{
+        width: 90%;
+    }
+
+    .columnTitle:nth-child(2){
+        width: 100px
+    }
+    
+    .columnTitle:nth-child(3){
+        width: 100px
+    }
+    
+    .columnTitle:nth-child(4){
+        width: 100px
+    }
+}
