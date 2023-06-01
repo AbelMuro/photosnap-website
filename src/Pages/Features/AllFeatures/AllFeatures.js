@@ -7,7 +7,7 @@ function AllFeatures() {
         <section className={styles.container}>
             {features.map((feature) => {
                 return (
-                    <div className={styles.feature}>
+                    <div className={styles.feature} key={feature.title}>
                         <div className={styles.feature_imageContainer}>
                             <img className={styles.feature_image} src={feature.image}/>                    
                         </div>

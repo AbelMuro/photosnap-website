@@ -10,7 +10,7 @@ function Features () {
                 features.map((feature) => {
                     if(feature.title === '100% Responsive' || feature.title === 'No Photo Upload Limit' || feature.title === 'Available to Embed')
                         return(
-                            <div className={styles.detail}>
+                            <div className={styles.detail} key={feature.title}>
                                 <div className={styles.detail_imageContainer}>
                                     <img className={styles.detail_image} src={feature.image}/>                    
                                 </div>

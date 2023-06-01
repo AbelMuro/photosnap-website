@@ -10,14 +10,15 @@ function Table() {
     return mobile ? (
         <table className={styles.tableMobile}>
             <caption className={styles.tableMobileTitle}>the features</caption>
-            <tbody>
                 {
                     PlanFeatures.map((feature) => {
                         return(
-                            <>
-                                <h1 className={styles.tableMobileFeature}>
-                                    {feature.name}
-                                </h1>
+                            <tbody key={feature.name}>
+                                <tr>
+                                    <th colSpan='3'className={styles.tableMobileFeature}>
+                                        {feature.name}
+                                    </th>                                
+                                </tr>
                                 <tr>
                                     <td className={styles.tableMobilePlan}>
                                         basic
@@ -40,11 +41,11 @@ function Table() {
                                         {feature.business ? <img src={check} className={styles.checkMarkMobile}/> : <></>}
                                     </td>
                                 </tr>                               
-                            </>
+                            </tbody>
                         )
                     })
                 }
-            </tbody>
+
         </table>
         ) 
            : 

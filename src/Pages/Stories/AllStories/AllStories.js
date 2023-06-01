@@ -8,7 +8,7 @@ function AllStories() {
         <section className={styles.container}>
             {allStories.map((story) => {
                 return(
-                    <DisplayStory story={story} displayDate={true}/>
+                    <DisplayStory story={story} displayDate={true} key={story.title}/>
                 )
             })}
         </section>
