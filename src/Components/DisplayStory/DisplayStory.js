@@ -20,7 +20,7 @@ function DisplayStory({story, displayDate}) {
 
     return(
         <div className={styles.container}>
-            <img className={styles.storyImage} ref={handleImage}/>
+            <img className={styles.storyImage} ref={handleImage} alt={title}/>
             
             <div className={styles.storyData}>
                 {displayDate ? 
@@ -36,7 +36,7 @@ function DisplayStory({story, displayDate}) {
                 <hr className={styles.whiteLine}/>
                 <a className={styles.storyLink}>
                     read story
-                    <img src={icons['arrow']} className={styles.arrow}/>
+                    <img src={icons['arrow']} className={styles.arrow} alt='arrow'/>
                 </a>
             </div>
             <hr className={styles.rainbowLine}/>

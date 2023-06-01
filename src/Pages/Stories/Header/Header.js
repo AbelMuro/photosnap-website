@@ -8,7 +8,7 @@ function Header () {
 
     return mobile ? 
         (<header className={styles.mobileContainer}>
-            <img className={styles.mobile_image}/>
+            <img className={styles.mobile_image} alt='mountains and the moon'/>
             <section className={styles.mobile_blackBox}>
                 <h2 className={styles.mobile_secondTitle}>
                     last month's featured story
@@ -26,7 +26,7 @@ function Header () {
                 </p>
                 <a className={styles.mobile_link}>
                     read the story
-                    <img className={styles.arrow} src={icons['arrow']}/>
+                    <img className={styles.arrow} src={icons['arrow']} alt='arrow'/>
                 </a>
             </section>
         </header>)
@@ -49,7 +49,7 @@ function Header () {
                 </p>
                 <a className={styles.link}>
                     read the story
-                    <img className={styles.arrow} src={icons['arrow']}/>
+                    <img className={styles.arrow} src={icons['arrow']} alt='arrow'/>
                 </a>
             </section>
         </header>) 

@@ -12,7 +12,7 @@ function Features () {
                         return(
                             <div className={styles.detail} key={feature.title}>
                                 <div className={styles.detail_imageContainer}>
-                                    <img className={styles.detail_image} src={feature.image}/>                    
+                                    <img className={styles.detail_image} src={feature.image} alt={'feature icon'}/>                    
                                 </div>
                                 <h1 className={styles.detail_title}>
                                     {feature.title}

@@ -12,7 +12,7 @@ function BetaSection () {
                 </h1>
                 <a className={styles.link}>
                     get an invite
-                    <img className={styles.arrow} src={icons['arrow']}/>
+                    <img className={styles.arrow} src={icons['arrow']} alt='arrow'/>
                 </a>                
             </div>
         </section>

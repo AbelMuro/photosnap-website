@@ -9,7 +9,7 @@ function AllFeatures() {
                 return (
                     <div className={styles.feature} key={feature.title}>
                         <div className={styles.feature_imageContainer}>
-                            <img className={styles.feature_image} src={feature.image}/>                    
+                            <img className={styles.feature_image} src={feature.image} alt={feature.title + 'image'}/>                    
                         </div>
                         <h1 className={styles.feature_title}>
                             {feature.title}

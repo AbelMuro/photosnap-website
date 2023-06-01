@@ -16,7 +16,7 @@ function FooterBar() {
         <footer className={styles.footer}>
             <div className={styles.footer_content}>
                 <div className={styles.content_grid}>
-                    <img src={icons['logoFooter']} className={styles.content_grid_logo}/>
+                    <img src={icons['logoFooter']} className={styles.content_grid_logo} alt='logo'/>
                     <ul className={styles.content_grid_navLinks} onClick={handleNavLink}>
                         <li className={styles.content_grid_navLink} data-route='/'>
                             home

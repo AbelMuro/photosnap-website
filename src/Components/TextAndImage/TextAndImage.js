@@ -51,11 +51,11 @@ function TextAndImage ({title, desc, imageDesktop, imageTablet, imageMobile, tex
                     </p>
                     <a className={styles.link} ref={handleTextColor}>
                         Get an invite
-                        <img src={arrow} className={styles.arrow}/>
+                        <img src={arrow} className={styles.arrow} alt='arrow'/>
                     </a>
                 </div>
             </section>
-            <img className={styles.image} ref={handleImage}/>
+            <img className={styles.image} ref={handleImage} alt={title + 'image'}/>
         </article>
     )
 }

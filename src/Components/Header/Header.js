@@ -30,7 +30,7 @@ function Header({title, desc, imageDesktop, imageTablet, imageMobile}) {
                     </p>                    
                 </div>
             </section>
-            <img className={styles.image} ref={handleImage}/>
+            <img className={styles.image} ref={handleImage} alt={title}/>
         </header>
     )
 }

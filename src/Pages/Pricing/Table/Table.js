@@ -32,13 +32,13 @@ function Table() {
                                 </tr>
                                 <tr className={styles.tableMobileCheckRow}>
                                     <td className={styles.tableMobileCheck}>
-                                        {feature.basic ? <img src={check} className={styles.checkMarkMobile}/> : <></>}
+                                        {feature.basic ? <img src={check} className={styles.checkMarkMobile} alt='check mark'/> : <></>}
                                     </td>
                                     <td className={styles.tableMobileCheck}>
-                                        {feature.pro ? <img src={check} className={styles.checkMarkMobile}/> : <></>}
+                                        {feature.pro ? <img src={check} className={styles.checkMarkMobile} alt='check mark'/> : <></>}
                                     </td>
                                     <td className={styles.tableMobileCheck}>
-                                        {feature.business ? <img src={check} className={styles.checkMarkMobile}/> : <></>}
+                                        {feature.business ? <img src={check} className={styles.checkMarkMobile} alt='check mark'/> : <></>}
                                     </td>
                                 </tr>                               
                             </tbody>
@@ -75,13 +75,13 @@ function Table() {
                                         {feature.name}
                                     </td>
                                     <td>
-                                        {feature.basic ? <img src={check} className={styles.checkMark}/> : <></>}
+                                        {feature.basic ? <img src={check} className={styles.checkMark} alt='check mark'/> : <></>}
                                     </td>
                                     <td>
-                                        {feature.pro ? <img src={check} className={styles.checkMark}/> : <></>}
+                                        {feature.pro ? <img src={check} className={styles.checkMark} alt='check mark'/> : <></>}
                                     </td>
                                     <td>
-                                        {feature.business ? <img src={check} className={styles.checkMark}/> : <></>}
+                                        {feature.business ? <img src={check} className={styles.checkMark} alt='check mark'/> : <></>}
                                     </td>
                                 </tr>
                             )

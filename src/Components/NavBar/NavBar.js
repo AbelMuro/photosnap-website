@@ -69,7 +69,7 @@ function NavBar() {
         <div ref={overlay}>
             <nav className={styles.navBar} ref={navBar}>
                 <div className={styles.content}>
-                    <img src={icons['logoNav']} className={styles.logo} onClick={handleNavLinks} data-link='/'/>
+                    <img src={icons['logoNav']} className={styles.logo} onClick={handleNavLinks} data-link='/' alt='logo'/>
                     {mobile ? <></> : 
                         <ul className={styles.navLinks} onClick={handleNavLinks}>
                             <li className={styles.navLink} data-link='/stories'>
@@ -84,7 +84,7 @@ function NavBar() {
                         </ul> }
                     {mobile ? 
                         <button className={styles.hamburgerContainer} onClick={handleMobileMenu}>
-                            <img className={styles.hamburger} src={mobileIcons['menu']}/>
+                            <img className={styles.hamburger} src={mobileIcons['menu']} alt='hamburger icon'/>
                         </button> 
                         : 
                         <button className={styles.inviteButton}>
